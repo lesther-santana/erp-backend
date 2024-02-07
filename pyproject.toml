@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "caobo-backend"
+version = "0.1.0"
+description = "Backend source code for caobo-app"
+authors = ["lesther-santana <lesthersan@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.1"
+uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
+sqlalchemy = "^2.0.23"
+alembic = "^1.12.1"
+pg8000 = "^1.30.3"
+psycopg2 = "^2.9.9"
+ruff = "^0.1.7"
+httpx = "^0.25.2"
+pytest = "^7.4.3"
+argon2-cffi = "^23.1.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
